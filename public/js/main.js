@@ -19035,7 +19035,6 @@ var React = require('react');
 var ListItem = require('./ListItem.jsx');
 
 var ingredients = [{ "id": 1, "text": "ham" }, { "id": 2, "text": "cheese" }, { "id": 3, "text": "potatoes" }];
-console.log(ingredients.toString());
 var List = React.createClass({
     displayName: 'List',
 
@@ -19046,7 +19045,7 @@ var List = React.createClass({
         return React.createElement(
             'ul',
             null,
-            '(listItems)'
+            listItems
         );
     }
 });
